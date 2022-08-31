@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue May 10 19:18:52 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "C2" LOCATE = SITE "Y6" LEVEL 1;
+COMP "Addr<1>" LOCATE = SITE "V3" LEVEL 1;
+COMP "Addr<2>" LOCATE = SITE "T4" LEVEL 1;
+COMP "Addr<3>" LOCATE = SITE "U3" LEVEL 1;
+COMP "Addr<4>" LOCATE = SITE "T3" LEVEL 1;
+COMP "Addr<0>" LOCATE = SITE "V4" LEVEL 1;
+COMP "Write_Reg" LOCATE = SITE "Y8" LEVEL 1;
+COMP "C1<0>" LOCATE = SITE "Y4" LEVEL 1;
+COMP "C1<1>" LOCATE = SITE "W4" LEVEL 1;
+COMP "Reset" LOCATE = SITE "W7" LEVEL 1;
+COMP "Clk" LOCATE = SITE "R4" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "J2" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "L1" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "M2" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "M1" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "N2" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "P1" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "P2" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "R1" LEVEL 1;
+SCHEMATIC END;
+

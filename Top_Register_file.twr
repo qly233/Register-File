@@ -1,0 +1,159 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ise\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2L -n
+3 -fastpaths -xml Top_Register_file.twx Top_Register_file.ncd -o
+Top_Register_file.twr Top_Register_file.pcf -ucf Top_Register_file.ucf
+
+Design file:              Top_Register_file.ncd
+Physical constraint file: Top_Register_file.pcf
+Device,package,speed:     xc7a100t,fgg484,C,-2L (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock Clk
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+Addr<0>     |    4.837(R)|      SLOW  |    2.122(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<1>     |    4.231(R)|      SLOW  |    1.749(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<2>     |    3.657(R)|      SLOW  |    2.220(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<3>     |    4.674(R)|      SLOW  |    1.771(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Addr<4>     |    6.733(R)|      SLOW  |    0.443(R)|      SLOW  |Clk_BUFGP         |   0.000|
+C1<0>       |    4.708(R)|      SLOW  |    2.765(R)|      SLOW  |Clk_BUFGP         |   0.000|
+C1<1>       |    4.506(R)|      SLOW  |    2.652(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Reset       |    4.470(R)|      SLOW  |    2.339(R)|      SLOW  |Clk_BUFGP         |   0.000|
+Write_Reg   |    5.524(R)|      SLOW  |    2.526(R)|      SLOW  |Clk_BUFGP         |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock Clk to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+LED<0>      |        16.355(R)|      SLOW  |         5.027(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<1>      |        15.324(R)|      SLOW  |         5.035(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<2>      |        15.783(R)|      SLOW  |         4.849(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<3>      |        15.233(R)|      SLOW  |         4.761(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<4>      |        12.638(R)|      SLOW  |         4.301(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<5>      |        14.633(R)|      SLOW  |         4.783(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<6>      |        14.642(R)|      SLOW  |         4.839(R)|      FAST  |Clk_BUFGP         |   0.000|
+LED<7>      |        12.434(R)|      SLOW  |         4.056(R)|      FAST  |Clk_BUFGP         |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+Clk            |    1.122|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+Addr<0>        |LED<0>         |   18.748|
+Addr<0>        |LED<1>         |   19.037|
+Addr<0>        |LED<2>         |   20.152|
+Addr<0>        |LED<3>         |   18.320|
+Addr<0>        |LED<4>         |   14.960|
+Addr<0>        |LED<5>         |   18.634|
+Addr<0>        |LED<6>         |   18.311|
+Addr<0>        |LED<7>         |   15.579|
+Addr<1>        |LED<0>         |   19.511|
+Addr<1>        |LED<1>         |   18.861|
+Addr<1>        |LED<2>         |   19.426|
+Addr<1>        |LED<3>         |   18.357|
+Addr<1>        |LED<4>         |   16.159|
+Addr<1>        |LED<5>         |   18.113|
+Addr<1>        |LED<6>         |   18.629|
+Addr<1>        |LED<7>         |   16.220|
+Addr<2>        |LED<0>         |   15.617|
+Addr<2>        |LED<1>         |   14.995|
+Addr<2>        |LED<2>         |   15.389|
+Addr<2>        |LED<3>         |   14.402|
+Addr<2>        |LED<4>         |   11.502|
+Addr<2>        |LED<5>         |   14.120|
+Addr<2>        |LED<6>         |   14.577|
+Addr<2>        |LED<7>         |   12.625|
+Addr<3>        |LED<0>         |   15.438|
+Addr<3>        |LED<1>         |   14.767|
+Addr<3>        |LED<2>         |   15.455|
+Addr<3>        |LED<3>         |   14.827|
+Addr<3>        |LED<4>         |   11.733|
+Addr<3>        |LED<5>         |   14.336|
+Addr<3>        |LED<6>         |   14.664|
+Addr<3>        |LED<7>         |   13.334|
+Addr<4>        |LED<0>         |   15.014|
+Addr<4>        |LED<1>         |   14.217|
+Addr<4>        |LED<2>         |   13.219|
+Addr<4>        |LED<3>         |   12.735|
+Addr<4>        |LED<4>         |    7.474|
+Addr<4>        |LED<5>         |   14.283|
+Addr<4>        |LED<6>         |   14.340|
+Addr<4>        |LED<7>         |    7.697|
+C1<0>          |LED<0>         |    8.717|
+C1<0>          |LED<1>         |    9.515|
+C1<0>          |LED<2>         |    8.147|
+C1<0>          |LED<3>         |    9.313|
+C1<0>          |LED<5>         |    8.282|
+C1<0>          |LED<6>         |    8.324|
+C1<1>          |LED<0>         |   12.224|
+C1<1>          |LED<1>         |   10.046|
+C1<1>          |LED<2>         |   10.976|
+C1<1>          |LED<3>         |   10.735|
+C1<1>          |LED<5>         |   10.024|
+C1<1>          |LED<6>         |    9.313|
+C2             |LED<0>         |   19.559|
+C2             |LED<1>         |   19.854|
+C2             |LED<2>         |   20.963|
+C2             |LED<3>         |   19.131|
+C2             |LED<4>         |   15.777|
+C2             |LED<5>         |   19.445|
+C2             |LED<6>         |   19.128|
+C2             |LED<7>         |   16.396|
+Write_Reg      |LED<0>         |   20.905|
+Write_Reg      |LED<1>         |   21.199|
+Write_Reg      |LED<2>         |   22.309|
+Write_Reg      |LED<3>         |   20.477|
+Write_Reg      |LED<4>         |   17.122|
+Write_Reg      |LED<5>         |   20.791|
+Write_Reg      |LED<6>         |   20.473|
+Write_Reg      |LED<7>         |   17.741|
+---------------+---------------+---------+
+
+
+Analysis completed Tue May 10 19:19:21 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 4957 MB
+
+
+

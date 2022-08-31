@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed May 04 18:45:31 2022
+# Process ID: 57872
+# Log file: D:/zuchengyuanli/jicunqidui/planAhead_run_1/planAhead.log
+# Journal file: D:/zuchengyuanli/jicunqidui/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/jicunqidui/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {data[31]} {data[30]} {data[29]} {data[28]} {data[27]} {data[26]} {data[25]} {data[24]} {data[23]} {data[22]} {data[21]} {data[20]} {data[19]} {data[18]} {data[17]} {data[16]} {data[15]} {data[14]} {data[13]} {data[12]} {data[11]} {data[10]} {data[9]} {data[8]} {data[7]} {data[6]} {data[5]} {data[4]} {data[3]} {data[2]} {data[1]} {data[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {led[31]} {led[30]} {led[29]} {led[28]} {led[27]} {led[26]} {led[25]} {led[24]} {led[23]} {led[22]} {led[21]} {led[20]} {led[19]} {led[18]} {led[17]} {led[16]} {led[15]} {led[14]} {led[13]} {led[12]} {led[11]} {led[10]} {led[9]} {led[8]} {led[7]} {led[6]} {led[5]} {led[4]} {led[3]} {led[2]} {led[1]} {led[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {data[31]} {data[30]} {data[29]} {data[28]} {data[27]} {data[26]} {data[25]} {data[24]} {data[23]} {data[22]} {data[21]} {data[20]} {data[19]} {data[18]} {data[17]} {data[16]} {data[15]} {data[14]} {data[13]} {data[12]} {data[11]} {data[10]} {data[9]} {data[8]} {data[7]} {data[6]} {data[5]} {data[4]} {data[3]} {data[2]} {data[1]} {data[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list reset]]
+set_property iostandard LVCMOS18 [get_ports [list sw_ab]]
+set_property iostandard LVCMOS18 [get_ports [list sw_data_add]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list sw_ab]]
+set_property pulltype PULLDOWN [get_ports [list sw_data_add]]
+save_constraints

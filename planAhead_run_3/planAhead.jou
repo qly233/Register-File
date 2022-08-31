@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue May 10 19:13:44 2022
+# Process ID: 4664
+# Log file: D:/zuchengyuanli/jicunqidui/planAhead_run_3/planAhead.log
+# Journal file: D:/zuchengyuanli/jicunqidui/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/jicunqidui/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {Addr[4]} {Addr[3]} {Addr[2]} {Addr[1]} {Addr[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {C1[1]} {C1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {LED[7]} {LED[6]} {LED[5]} {LED[4]} {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {Addr[4]} {Addr[3]} {Addr[2]} {Addr[1]} {Addr[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {C1[1]} {C1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list C2]]
+set_property iostandard LVCMOS18 [get_ports [list Clk]]
+set_property iostandard LVCMOS18 [get_ports [list Reset]]
+set_property iostandard LVCMOS18 [get_ports [list Write_Reg]]
+set_property pulltype PULLDOWN [get_ports [list Clk]]
+set_property pulltype PULLDOWN [get_ports [list C2]]
+set_property pulltype PULLDOWN [get_ports [list Reset]]
+set_property pulltype PULLDOWN [get_ports [list Write_Reg]]
+startgroup
+set_property package_pin T3 [get_ports {Addr[4]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {Addr[3]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {Addr[2]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {Addr[1]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {Addr[0]}]
+endgroup
+startgroup
+set_property package_pin W4 [get_ports {C1[1]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {C1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  C2]]
+startgroup
+set_property package_pin Y6 [get_ports C2]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports Reset]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports Write_Reg]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports Clk]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {LED[6]}]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[4]}]]
+startgroup
+set_property package_pin P1 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {LED[0]}]
+endgroup
+save_constraints

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/Top_Register_file.xst" -ofn "D:/zuchengyuanli/jicunqidui/Top_Register_file.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Top_Register_file.ucf -p xc7a100t-fgg484-2L Top_Register_file.ngc Top_Register_file.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_Register_file_map.ncd Top_Register_file.ngd Top_Register_file.pcf 
+par -w -intstyle ise -ol high -mt off Top_Register_file_map.ncd Top_Register_file.ncd Top_Register_file.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml Top_Register_file.twx Top_Register_file.ncd -o Top_Register_file.twr Top_Register_file.pcf -ucf Top_Register_file.ucf 
+bitgen -intstyle ise -f Top_Register_file.ut Top_Register_file.ncd 

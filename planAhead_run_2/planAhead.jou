@@ -1,0 +1,218 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Tue May 10 18:25:13 2022
+# Process ID: 13584
+# Log file: D:/zuchengyuanli/jicunqidui/planAhead_run_2/planAhead.log
+# Journal file: D:/zuchengyuanli/jicunqidui/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/zuchengyuanli/jicunqidui/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+set_property package_pin "" [get_ports [list  reset]]
+startgroup
+set_property package_pin T3 [get_ports {data[31]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {data[30]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {data[29]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {data[28]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {data[27]}]
+endgroup
+startgroup
+set_property package_pin W4 [get_ports {data[26]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {data[25]}]
+endgroup
+startgroup
+set_property package_pin Y6 [get_ports {data[24]}]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports {data[23]}]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports {data[22]}]
+endgroup
+startgroup
+set_property package_pin Y7 [get_ports {data[21]}]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports {data[20]}]
+endgroup
+startgroup
+set_property package_pin U1 [get_ports {data[19]}]
+endgroup
+startgroup
+set_property package_pin U2 [get_ports {data[18]}]
+endgroup
+startgroup
+set_property package_pin W1 [get_ports {data[17]}]
+endgroup
+startgroup
+set_property package_pin W2 [get_ports {data[16]}]
+endgroup
+startgroup
+set_property package_pin Y1 [get_ports {data[15]}]
+endgroup
+startgroup
+set_property package_pin AA1 [get_ports {data[14]}]
+endgroup
+startgroup
+set_property package_pin V2 [get_ports {data[13]}]
+endgroup
+startgroup
+set_property package_pin Y2 [get_ports {data[12]}]
+endgroup
+startgroup
+set_property package_pin AB1 [get_ports {data[11]}]
+endgroup
+startgroup
+set_property package_pin AB2 [get_ports {data[10]}]
+endgroup
+startgroup
+set_property package_pin AB3 [get_ports {data[9]}]
+endgroup
+startgroup
+set_property package_pin AB5 [get_ports {data[8]}]
+endgroup
+startgroup
+set_property package_pin AA6 [get_ports {data[7]}]
+endgroup
+startgroup
+set_property package_pin R2 [get_ports {data[6]}]
+endgroup
+startgroup
+set_property package_pin R3 [get_ports {data[5]}]
+endgroup
+startgroup
+set_property package_pin T6 [get_ports {data[4]}]
+endgroup
+startgroup
+set_property package_pin R6 [get_ports {data[3]}]
+endgroup
+startgroup
+set_property package_pin U7 [get_ports {data[2]}]
+endgroup
+set_property package_pin "" [get_ports [list  {data[0]}]]
+startgroup
+set_property package_pin AB7 [get_ports {data[1]}]
+endgroup
+startgroup
+set_property package_pin AB8 [get_ports {data[0]}]
+endgroup
+startgroup
+set_property package_pin AA4 [get_ports reset]
+endgroup
+startgroup
+set_property package_pin AB6 [get_ports sw_ab]
+endgroup
+startgroup
+set_property package_pin T5 [get_ports sw_data_add]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports {led[31]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {led[30]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {led[29]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {led[28]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {led[27]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {led[26]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {led[25]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {led[24]}]
+endgroup
+startgroup
+set_property package_pin G1 [get_ports {led[23]}]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports {led[22]}]
+endgroup
+startgroup
+set_property package_pin D2 [get_ports {led[21]}]
+endgroup
+startgroup
+set_property package_pin A1 [get_ports {led[20]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {led[19]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {led[18]}]
+endgroup
+startgroup
+set_property package_pin K4 [get_ports {led[17]}]
+endgroup
+startgroup
+set_property package_pin G4 [get_ports {led[16]}]
+endgroup
+startgroup
+set_property package_pin K1 [get_ports {led[15]}]
+endgroup
+startgroup
+set_property package_pin J1 [get_ports {led[14]}]
+endgroup
+startgroup
+set_property package_pin H2 [get_ports {led[13]}]
+endgroup
+startgroup
+set_property package_pin G2 [get_ports {led[12]}]
+endgroup
+startgroup
+set_property package_pin F1 [get_ports {led[11]}]
+endgroup
+startgroup
+set_property package_pin E2 [get_ports {led[10]}]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports {led[9]}]
+endgroup
+startgroup
+set_property package_pin B1 [get_ports {led[8]}]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports {led[7]}]
+endgroup
+startgroup
+set_property package_pin N3 [get_ports {led[6]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {led[5]}]
+endgroup
+startgroup
+set_property package_pin K3 [get_ports {led[4]}]
+endgroup
+startgroup
+set_property package_pin H3 [get_ports {led[3]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {led[2]}]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports {led[1]}]
+endgroup
+startgroup
+set_property package_pin J4 [get_ports {led[0]}]
+endgroup
+save_constraints

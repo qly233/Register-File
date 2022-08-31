@@ -1,0 +1,119 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/zuchengyuanli/jicunqidui/pa.fromHdl.tcl
+# create_project -name jicunqidui -dir "D:/zuchengyuanli/jicunqidui/planAhead_run_3" -part xc7a100tfgg484-2L
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Top_Register_file.ucf" [current_fileset -constrset]
+Adding file 'D:/zuchengyuanli/jicunqidui/Top_Register_file.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {jicunqidui.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Top_Register_file $srcset
+# add_files [list {Top_Register_file.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc7a100tfgg484-2L
+Using Verific elaboration
+Parsing VHDL file "D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "D:/zuchengyuanli/jicunqidui/jicunqidui.v" into library work
+Loading clock regions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from D:/ise/14.7/ISE_DS/PlanAhead/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/artix7/xc7a100t/fgg484/Package.xml
+Loading io standards from D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from D:/ise/14.7/ISE_DS/PlanAhead/data\parts/xilinx/artix7/ConfigModes.xml
+Loading list of drcs for the architecture : D:/ise/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/artix7/drc.xml
+Parsing UCF File [D:/zuchengyuanli/jicunqidui/Top_Register_file.ucf]
+Finished Parsing UCF File [D:/zuchengyuanli/jicunqidui/Top_Register_file.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: b414ac32
+open_rtl_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 867.582 ; gain = 368.332
+update_compile_order -fileset sim_1
+set_property iostandard LVCMOS18 [get_ports [list {Addr[4]} {Addr[3]} {Addr[2]} {Addr[1]} {Addr[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {C1[1]} {C1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list {LED[7]} {LED[6]} {LED[5]} {LED[4]} {LED[3]} {LED[2]} {LED[1]} {LED[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {Addr[4]} {Addr[3]} {Addr[2]} {Addr[1]} {Addr[0]}]]
+set_property pulltype PULLDOWN [get_ports [list {C1[1]} {C1[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list C2]]
+set_property iostandard LVCMOS18 [get_ports [list Clk]]
+set_property iostandard LVCMOS18 [get_ports [list Reset]]
+set_property iostandard LVCMOS18 [get_ports [list Write_Reg]]
+set_property pulltype PULLDOWN [get_ports [list Clk]]
+set_property pulltype PULLDOWN [get_ports [list C2]]
+set_property pulltype PULLDOWN [get_ports [list Reset]]
+set_property pulltype PULLDOWN [get_ports [list Write_Reg]]
+startgroup
+set_property package_pin T3 [get_ports {Addr[4]}]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports {Addr[3]}]
+endgroup
+startgroup
+set_property package_pin T4 [get_ports {Addr[2]}]
+endgroup
+startgroup
+set_property package_pin V3 [get_ports {Addr[1]}]
+endgroup
+startgroup
+set_property package_pin V4 [get_ports {Addr[0]}]
+endgroup
+startgroup
+set_property package_pin W4 [get_ports {C1[1]}]
+endgroup
+startgroup
+set_property package_pin Y4 [get_ports {C1[0]}]
+endgroup
+set_property package_pin "" [get_ports [list  C2]]
+startgroup
+set_property package_pin Y6 [get_ports C2]
+endgroup
+startgroup
+set_property package_pin W7 [get_ports Reset]
+endgroup
+startgroup
+set_property package_pin Y8 [get_ports Write_Reg]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports Clk]
+endgroup
+startgroup
+set_property package_pin R1 [get_ports {LED[7]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {LED[6]}]
+endgroup
+set_property package_pin "" [get_ports [list  {LED[4]}]]
+startgroup
+set_property package_pin P1 [get_ports {LED[5]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {LED[4]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports {LED[3]}]
+endgroup
+startgroup
+set_property package_pin M2 [get_ports {LED[2]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {LED[1]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {LED[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue May 10 19:18:27 2022...
+INFO: [Common 17-83] Releasing license: PlanAhead

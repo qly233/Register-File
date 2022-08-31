@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+xst -intstyle ise -ifn "D:/zuchengyuanli/jicunqidui/jicunqidui.xst" -ofn "D:/zuchengyuanli/jicunqidui/jicunqidui.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc jicunqidui.ucf -p xc7a100t-fgg484-2L jicunqidui.ngc jicunqidui.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o jicunqidui_map.ncd jicunqidui.ngd jicunqidui.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc jicunqidui.ucf -p xc7a100t-fgg484-2L jicunqidui.ngc jicunqidui.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc jicunqidui.ucf -p xc7a100t-fgg484-2L jicunqidui.ngc jicunqidui.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o jicunqidui_map.ncd jicunqidui.ngd jicunqidui.pcf 
+par -w -intstyle ise -ol high -mt off jicunqidui_map.ncd jicunqidui.ncd jicunqidui.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml jicunqidui.twx jicunqidui.ncd -o jicunqidui.twr jicunqidui.pcf -ucf jicunqidui.ucf 
+bitgen -intstyle ise -f jicunqidui.ut jicunqidui.ncd 
